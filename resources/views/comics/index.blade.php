@@ -3,7 +3,6 @@
 
 @section('main-content')
   <section class="container mt-5">
-    <a href="{{ route('comics.create') }}" class="btn btn-primary my-3">Inserisci un nuovo Fumetto</a>
     <table class="table">
         <thead>
             <tr>
