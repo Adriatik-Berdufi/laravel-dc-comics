@@ -1,10 +1,9 @@
 
-
-
 @extends('layouts.app')
 
 @section('main-content')
   <section class="container mt-5">
+    <a href="{{ route('comics.create') }}" class="btn btn-primary my-3">Inserisci un nuovo Fumetto</a>
     <table class="table">
         <thead>
             <tr>
@@ -25,6 +24,7 @@
                 <td>{{ $comic->series }}</td>
                 <td>{{ $comic->sale_date }}</td>
                 <td>{{ $comic->type }}</td>
+                <td><a href="{{ route('comics.show', $comic) }}">vai al comic</a></td>
                 
             </tr>
             @endforeach
